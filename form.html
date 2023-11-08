@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Form Container Styles */
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: rgb(232, 190, 232);
+            border-radius: 5px;
+        }
+
+        /* Input Field Styles */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Radio Button and Checkbox Styles */
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        /* Select Dropdown Styles */
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Submit Button Styles */
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Your password">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Your username">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+            <br>
+            <br>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+            <br>
+
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <br>
+            <br>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
